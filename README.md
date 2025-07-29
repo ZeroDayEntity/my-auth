@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# پیاده‌سازی تسک احراز هویت
 
-## Getting Started
+این پروژه به عنوان بخشی از فرآیند استخدام و برای نمایش توانایی‌ها در کار با Next.js، TypeScript و SCSS پیاده‌سازی شده است.
 
-First, run the development server:
+## 🚀 معرفی پروژه
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+هدف این تسک، ساخت یک جریان احراز هویت ساده با دو صفحه اصلی است:
+- **صفحه ورود (`/auth`):** شامل یک فرم با اعتبارسنجی شماره موبایل.
+- **صفحه داشبورد (`/dashboard`):** یک صفحه محافظت‌شده که پس از ورود موفق، اطلاعات کاربر را نمایش می‌دهد.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ تکنولوژی‌های استفاده شده
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js 14** (App Router)
+- **TypeScript**
+- **React** & **React Hooks**
+- **SCSS Modules** (برای استایل‌دهی)
+- **React Hook Form** & **Zod** (برای مدیریت و اعتبارسنجی فرم)
+- **Context API** (برای مدیریت وضعیت احراز هویت در سمت کلاینت)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 ساختار پروژه
 
-## Learn More
+برای خوانایی و نگهداری بهتر، پروژه با ساختار زیر سازماندهی شده است:
 
-To learn more about Next.js, take a look at the following resources:
+- `src/app`: مسیرها و صفحات اصلی برنامه
+- `src/components`: کامپوننت‌های قابل استفاده مجدد UI
+- `src/context`: کانتکست مربوط به احراز هویت
+- `src/hooks`: هوک‌های سفارشی (مانند `useAuth`)
+- `src/lib`: منطق‌های کمکی مانند اسکیمای اعتبارسنجی
+- `src/types`: تعریف اینترفیس‌های TypeScript
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ راهنمای اجرا
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+برای اجرای پروژه به صورت محلی، مراحل زیر را دنبال کنید:
 
-## Deploy on Vercel
+1.  **نصب وابستگی‌ها:**
+    ```bash
+    npm install
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **اجرای سرور توسعه:**
+    ```bash
+    npm run dev
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  برنامه در آدرس `http://localhost:3000` قابل مشاهده خواهد بود.
+
+---
+با تشکر از فرصتی که در اختیار بنده قرار دادید.
+سعید حصاری
