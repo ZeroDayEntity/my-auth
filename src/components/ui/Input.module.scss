@@ -1,0 +1,43 @@
+.inputWrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  
+    label {
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #4b5563;
+    }
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  
+    &:focus {
+      outline: none;
+      border-color: #4f46e5;
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+    }
+  }
+  
+  /* Styles for when there's a validation error */
+  .error {
+    border-color: #ef4444;
+    &:focus {
+      border-color: #ef4444;
+      box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+    }
+  }
+  
+  .errorMessage {
+    color: #ef4444;
+    font-size: 12px;
+    margin-top: 6px;
+  }
